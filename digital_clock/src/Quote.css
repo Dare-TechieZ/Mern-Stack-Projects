@@ -1,0 +1,31 @@
+
+.quote-container {
+
+  
+   flex-direction: column;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #f0eeee;
+    transition: all 0.3s ease;
+}
+
+.quote-content {
+    font-size: 1.4rem;
+    font-style: italic;
+    font-family: 'Georgia', serif;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    padding: 20px;
+    max-width: 80%;
+    flex-direction: column;
+}
+
+.quote-author {
+    font-weight: bold;
+    font-size: 1rem;
+    opacity: 0.8;
+    flex-direction: column;
+}

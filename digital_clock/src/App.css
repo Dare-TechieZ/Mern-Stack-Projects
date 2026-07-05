@@ -1,0 +1,134 @@
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.clock-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+    flex-direction: column;
+}
+.clock{
+    font-size: 5rem;
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 20px 40px;
+    backdrop-filter: blur(5px);
+    flex-direction: column;
+    border-radius: 50px;
+}
+.date{
+    font-size: 2rem;
+    font-family: 'Arial', sans-serif;
+    color: #ebe5e5;
+    font-weight: bold;
+    padding: 10px 20px;
+    backdrop-filter: blur(5px);
+    flex-direction: column;
+    border-radius: 30px;
+}
+.app.light{
+    background-image:url("./assets/background.jpg");
+    color: #f0eeee;
+    background-size: cover;
+}
+
+.app.light .theme-toggle{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #3e0707;
+    color: #fff;
+}
+.app.dark{
+    background-image: url("./assets/background1.jpg");
+    color: #110e0e;
+    background-size: cover;
+    
+} 
+
+.app.dark .theme-toggle{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #000000;
+    color: #fff;
+}
+.audio-control {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.track-select {
+    padding: 8px;
+    border-radius: 6px;
+    border: none;
+    background: rgba(0, 0, 0, 0.2);
+    color: white;
+    cursor: pointer;
+}
+
+
+.custom-audio {
+    height: 35px;
+   
+    filter: invert(100%) hue-rotate(180deg) brightness(1.5);
+}
+.audio-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+/* The main dropdown container */
+.track-select {
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+    width: 200px;
+}
+
+
+.track-select:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Styling the options inside the dropdown */
+.track-select option {
+    background-color: #333; 
+    color: white;
+    padding: 10px;
+}
