@@ -1,16 +1,87 @@
-# React + Vite
+# 📝 To-Do List App
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A simple and responsive To-Do List application built using **React** and **Vite**. It allows users to add, delete, and reorder tasks.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- ➕ Add new tasks
+- 🗑️ Delete tasks
+- ⬆️ Move tasks up
+- ⬇️ Move tasks down
+- ⚡ Fast development with Vite
+- 📱 Clean and simple UI
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- Vite
+- JavaScript
+- CSS
 
-## Expanding the Oxlint configuration
+## 📂 Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+```
+todo-list/
+├── src/
+│   ├── App.jsx
+│   ├── main.jsx
+│   ├── index.css
+│   └── components/
+├── package.json
+├── vite.config.js
+└── README.md
+```
+
+## 📸 Screenshot
+
+![To-Do List App](screenshot.png)
+
+
+## ⚙️ Installation
+
+1. Clone the repository
+
+```bash
+git clone <repository-url>
+```
+
+2. Navigate to the project folder
+
+```bash
+cd todo-list
+```
+
+3. Install dependencies
+
+```bash
+npm install
+```
+
+4. Start the development server
+
+```bash
+npm run dev
+```
+
+The app will run at:
+
+
+[[http://localhost:5173](https://todolist-rho-pied.vercel.app/)](https://todolist-rho-pied.vercel.app/)
+
+
+## 📖 How to Use
+
+1. Enter a task in the input field.
+2. Click **Add Task**.
+3. Use **Delete** to remove a task.
+4. Use **👆** to move a task up.
+5. Use **👇** to move a task down.
+
+## 🌟 Future Improvements
+
+- Edit existing tasks
+- Mark tasks as completed
+- Save tasks using Local Storage
+- Dark mode
+- Task categories
+
