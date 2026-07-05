@@ -1,0 +1,24 @@
+.color-picker-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: hsl(0, 0%, 93%);
+  color:rgb(0, 0, 0);
+  overflow: hidden;
+  
+}
+
+
+.color-picker h1 {
+  margin-bottom: 20px;
+  font-size: 24px;  
+  color:rgb(0, 0, 0)
+}
+.p{
+  font-size: 18px;
+  margin-bottom: 10px;
+  color:rgb(0, 0, 0);
+}
